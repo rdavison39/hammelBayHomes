@@ -1,5 +1,5 @@
 /* =========================
-   GLOBAL
+GLOBAL
 ========================= */
 
 body{
@@ -11,49 +11,49 @@ line-height:1.6;
 }
 
 /* =========================
-   HEADER
+HEADER
 ========================= */
 
 header{
 background:#1f3d2b;
 color:white;
-padding:18px 30px;
+padding:10px 30px;
 display:flex;
-justify-content:space-between;
 align-items:center;
-flex-wrap:wrap;
+justify-content:space-between;
 }
 
 /* =========================
-   LOGO
+LOGO
 ========================= */
 
 .logo{
 display:flex;
 align-items:center;
+flex-shrink:0;
 }
 
 .logo img{
-height:30px;
+height:85px;
 width:auto;
 display:block;
+transform:scale(1.8);
+transform-origin:left center;
 }
-
-.logo span{
-font-size:22px;
-font-weight:bold;
-color:white;
-}
-
-
 
 /* =========================
-   NAVIGATION
+NAVIGATION
 ========================= */
+
+nav{
+margin-left:auto;
+display:flex;
+align-items:center;
+}
 
 nav a{
 color:white;
-margin-left:20px;
+margin-left:22px;
 text-decoration:none;
 font-weight:bold;
 font-size:15px;
@@ -64,7 +64,7 @@ text-decoration:underline;
 }
 
 /* =========================
-   HERO SECTION
+HERO SECTION
 ========================= */
 
 .hero{
@@ -103,7 +103,7 @@ margin:5px 0;
 }
 
 /* =========================
-   BUTTONS
+BUTTONS
 ========================= */
 
 .button{
@@ -118,12 +118,10 @@ border-radius:6px;
 box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
-.button:hover{
-background:#d4a700;
-}
+.button:hover
 
 /* =========================
-   PAGE CONTAINERS
+PAGE CONTAINERS
 ========================= */
 
 .container{
@@ -136,7 +134,7 @@ box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
 
 /* =========================
-   SERVICES GRID
+SERVICES GRID
 ========================= */
 
 .services{
@@ -157,7 +155,7 @@ margin-top:0;
 }
 
 /* =========================
-   GALLERY GRID
+GALLERY GRID
 ========================= */
 
 .gallery-grid{
@@ -174,7 +172,7 @@ display:block;
 }
 
 /* =========================
-   LISTS
+LISTS
 ========================= */
 
 ul{
@@ -183,7 +181,7 @@ line-height:1.8;
 }
 
 /* =========================
-   FOOTER
+FOOTER
 ========================= */
 
 footer{
@@ -199,7 +197,7 @@ margin:6px 0;
 }
 
 /* =========================
-   MOBILE
+MOBILE
 ========================= */
 
 @media (max-width:700px){
@@ -224,10 +222,15 @@ margin-top:5px;
 font-size:28px;
 }
 
+.logo img{
+transform:scale(1.2);
+height:70px;
+}
+
 }
 
 /* =========================
-   CONTACT FORM
+CONTACT FORM
 ========================= */
 
 form{
@@ -267,12 +270,10 @@ cursor:pointer;
 transition:background 0.2s;
 }
 
-form button:hover{
-background:#2f5d3a;
-}
+form button:hover
 
 /* =========================
-   CONTACT PAGE LAYOUT
+CONTACT PAGE LAYOUT
 ========================= */
 
 .contact-grid{
@@ -282,8 +283,6 @@ gap:40px;
 align-items:start;
 }
 
-/* Mobile fallback */
-
 @media (max-width:800px){
 
 .contact-grid{
@@ -291,8 +290,6 @@ grid-template-columns:1fr;
 }
 
 }
-
-/* Contact info card */
 
 .contact-card{
 background:#f7f7f7;
@@ -306,7 +303,7 @@ font-size:16px;
 }
 
 /* =========================
-   STICKY QUOTE BAR
+STICKY QUOTE BAR
 ========================= */
 
 .sticky-quote{
@@ -334,6 +331,4 @@ padding:10px 16px;
 border-radius:5px;
 }
 
-.sticky-quote a:hover{
-background:#d4a700;
-}
+.sticky-quote a:hover
