@@ -78,15 +78,15 @@ Call or text anytime for excavation quotes.
 
 <p>Please include a phone number and a brief description of your project.</p>
 
-<form>
+<form action="https://formspree.io/f/xgonzalk" method="POST">
 
-<input type="text" placeholder="Your Name">
+<input type="text" name="name" placeholder="Your Name" required>
 
-<input type="email" placeholder="Your Email">
+<input type="email" name="email" placeholder="Your Email" required>
 
-<input type="text" placeholder="Phone Number">
+<input type="text" name="phone" placeholder="Phone Number">
 
-<textarea rows="6" placeholder="Describe your project"></textarea>
+<textarea name="message" rows="6" placeholder="Describe your project" required></textarea>
 
 <button type="submit">Send Message</button>
 
@@ -163,3 +163,4 @@ contact Hammel Bay Homes for a quote.
 </div>
 </body>
 </html>
+
