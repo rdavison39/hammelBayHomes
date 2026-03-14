@@ -1,129 +1,43 @@
-<!DOCTYPE html>
-<!-- Ron Davison-->
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+name: Deploy Website to AWS S3
 
-<title>Mini Excavation Bracebridge Ontario | Hammel Bay Homes</title>
+on:
+push:
+branches:
+- main
 
-<meta name="description" content="Mini excavation services in Bracebridge Ontario including trenching, drainage, culverts, driveway preparation and stump removal. Serving Muskoka cottage properties.">
+jobs:
+deploy:
+name: Deploy to S3
+runs-on: ubuntu-latest
 
-<meta name="robots" content="index, follow">
+```
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v4
 
-<link rel="stylesheet" href="../css/style.css">
-</head>
+  - name: Configure AWS credentials
+    uses: aws-actions/configure-aws-credentials@v4
+    with:
+      aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      aws-region: ${{ secrets.AWS_REGION }}
 
-<body>
+  - name: Upload website to S3
+    run: |
+      aws s3 sync . s3://www.hbhomes.ca \
+        --delete \
+        --exclude ".git/*" \
+        --exclude ".github/*" \
+        --exclude ".gitignore" \
+        --exclude "README.md"
 
-<header>
-
-<div class="logo">
-<img src="../images/logo-header.png" alt="Hammel Bay Homes">
-</div>
-
-<nav>
-<a href="../index.html">Home</a>
-<a href="../services/index.html">Services</a>
-<a href="../gallery/index.html">Gallery</a>
-<a href="../contact/index.html">Contact</a>
-<a href="../muskoka-mini-excavation/index.html">Muskoka Mini Excavation</a>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<h2>Mini Excavation Services in Bracebridge Ontario</h2>
-
-<p>Trenching • Drainage • Culverts • Driveway Preparation</p>
-
-<p>Serving Bracebridge and surrounding Muskoka cottage properties</p>
-
-<a class="button" href="../../contact/index.html">Request a Quote</a>
-
-</section>
-
-<div class="container">
-
-<h2>Reliable Excavation in Bracebridge</h2>
-
-<p>
-Hammel Bay Homes provides mini excavation services in Bracebridge, Ontario and the surrounding Muskoka region. Based nearby in Utterson, we specialize in excavation projects for cottage properties and residential homes.
-</p>
-
-<p>
-Our Bobcat 5.5-ton mini excavator is ideal for trenching, drainage improvements and driveway preparation where larger machines cannot easily access the property.
-</p>
-
-</div>
-
-<div class="container">
-
-<h2>Excavation Services in Bracebridge</h2>
-
-<div class="service">
-<h3>Trenching</h3>
-<p>Utility trenching for water lines, hydro conduit, septic lines and drainage systems.</p>
-</div>
-
-<div class="service">
-<h3>Drainage Improvements</h3>
-<p>Excavation and grading to improve water drainage around cottages, garages and driveways.</p>
-</div>
-
-<div class="service">
-<h3>Culvert Installation</h3>
-<p>Driveway culvert installation and replacement to improve drainage and protect access roads.</p>
-</div>
-
-<div class="service">
-<h3>Driveway Preparation</h3>
-<p>Preparation of gravel driveways, parking areas and cottage access roads.</p>
-</div>
-
-<div class="service">
-<h3>Stump Removal</h3>
-<p>Removal of small to medium tree stumps and basic lot clearing.</p>
-</div>
-
-</div>
-
-<div class="container">
-
-<h2>Serving Bracebridge and Muskoka</h2>
-
-<p>
-We provide excavation services across Muskoka including Bracebridge, Huntsville, Lake of Bays and Gravenhurst.
-</p>
-
-<p>
-If you need trenching, driveway excavation or drainage improvements in Bracebridge, contact Hammel Bay Homes for a quote.
-</p>
-
-<h3>Other Muskoka Service Areas</h3>
-
-<ul>
-<li><a href="../excavation-huntsville/index.html">Excavation Huntsville</a></li>
-<li><a href="../excavation-lake-of-bays/index.html">Excavation Lake of Bays</a></li>
-<li><a href="../excavation-gravenhurst/index.html">Excavation Gravenhurst</a></li>
-</ul>
-
-</div>
-
-<footer>
-
-<p>Hammel Bay Homes | Mini Excavation Bracebridge Ontario</p>
-
-<p>Utterson, Ontario</p>
-
-<p>Serving Huntsville • Bracebridge • Lake of Bays • Gravenhurst</p>
-
-</footer>
-<div class="sticky-quote">
-<span>Need excavation work in Muskoka?</span>
-<a href="tel:9054642014">Call 905-464-2014</a>
-<a href="../contact/index.html">Request a Quote</a>
-</div>
-</body>
-</html>
+  - name: Fix HTML metadata
+    run: |
+      aws s3 cp s3://www.hbhomes.ca s3://www.hbhomes.ca \
+        --recursive \
+        --exclude "*" \
+        --include "*.html" \
+        --metadata-directive REPLACE \
+        --content-type "text/html" \
+        --cache-control "no-cache"
+```
