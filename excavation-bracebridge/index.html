@@ -20,29 +20,18 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: Upload website to S3
+      - name: Upload HTML files
         run: |
           aws s3 sync . s3://www.hbhomes.ca \
             --delete \
-            --exclude ".git/*" \
-            --exclude ".github/*" \
-            --exclude ".gitignore" \
-            --exclude "README.md"
-
-      - name: Fix HTML metadata
-        run: |
-          aws s3 cp s3://www.hbhomes.ca s3://www.hbhomes.ca \
-            --recursive \
             --exclude "*" \
             --include "*.html" \
-            --metadata-directive REPLACE \
-            --content-type "text/html" \
             --cache-control "no-cache"
 
-      # Optional: Invalidate CloudFront cache to refresh the site immediately
-      # Requires adding ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} to GitHub Secrets
-      - name: Invalidate CloudFront
+      - name: Upload remaining assets
         run: |
-          aws cloudfront create-invalidation \
-            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
-            --paths "/*"
+          aws s3 sync . s3://www.hbhomes.ca \
+            --delete \
+            --exclude "*.html" \
+            --exclude ".git/*" \
+            --exclude ".github/*"
