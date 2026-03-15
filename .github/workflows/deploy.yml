@@ -1,0 +1,60 @@
+name: Deploy Websites to AWS S3
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy all sites
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Deploy sites
+        run: |
+          for domain_path in sites/*; do
+            [ -d "$domain_path" ] || continue
+            DOMAIN=$(basename "$domain_path")
+
+            for site_path in "$domain_path"/*; do
+              [ -d "$site_path" ] || continue
+              SITE=$(basename "$site_path")
+
+              if [ "$SITE" = "root" ]; then
+                BUCKET="www.$DOMAIN"
+              else
+                BUCKET="$SITE.$DOMAIN"
+              fi
+
+              echo "Checking bucket: $BUCKET"
+
+              if aws s3api head-bucket --bucket "$BUCKET" 2>/dev/null; then
+                echo "Deploying $site_path to s3://$BUCKET"
+
+                # Sync static assets with long caching
+                aws s3 sync "$site_path" "s3://$BUCKET" \
+                  --delete \
+                  --exclude "*.html" \
+                  --cache-control "public,max-age=31536000"
+
+                # Sync HTML files with no-cache to ensure updates are seen immediately
+                aws s3 sync "$site_path" "s3://$BUCKET" \
+                  --exclude "*" \
+                  --include "*.html" \
+                  --cache-control "no-cache"
+              else
+                echo "Skipping $site_path because bucket $BUCKET does not exist"
+              fi
+            done
+          done
