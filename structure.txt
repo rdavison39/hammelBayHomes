@@ -1,0 +1,954 @@
+Folder PATH listing for volume Windows-SSD
+Volume serial number is E872-7E3C
+C:\repo-websites.
+|   create new website.bat
+|   readme - how to setup a new website (xxx.thedavisons.ca).txt
+|   structure.txt
+|   
++---.github
+|   \---workflows
+|           deploy.yml
+|           
++---amazon security keys
+|       access and secret keys for Amazon S3.txt
+|       accessKeyID-and-secret-access-key.jpg
+|       rootkey.csv
+|       
+\---sites
+    +---hbhomes.ca
+    |   \---root
+    |       |   .gitignore
+    |       |   index.html
+    |       |   sitemap.xml
+    |       |   
+    |       +---contact
+    |       |       index.html
+    |       |       
+    |       +---css
+    |       |       style.css
+    |       |       
+    |       +---excavation-bracebridge
+    |       |       index.html
+    |       |       
+    |       +---excavation-gravenhurst
+    |       |       index.html
+    |       |       
+    |       +---excavation-huntsville
+    |       |       index.html
+    |       |       
+    |       +---excavation-lake-of-bays
+    |       |       index.html
+    |       |       
+    |       +---gallery
+    |       |       index.html
+    |       |       
+    |       +---images
+    |       |       20221004_144439.jpg
+    |       |       backhoe and E55 - Copy.jpg
+    |       |       baysville-2.jpg
+    |       |       excavagtor.3.jpg
+    |       |       excavator-hero.jpg
+    |       |       excvator.1.jpg
+    |       |       foundation.1.jpg
+    |       |       logo-header.png
+    |       |       Logo-transparent.png
+    |       |       logo.png
+    |       |       lot clearing - big island.jpg
+    |       |       lot clearing.1.jpg
+    |       |       road building - utterson.2.jpg
+    |       |       stepping stones.1.jpg
+    |       |       steps - Copy.jpg
+    |       |       truckOnTrailer.1.jpg
+    |       |       
+    |       +---muskoka-mini-excavation
+    |       |       index.html
+    |       |       
+    |       \---services
+    |               index.html
+    |               
+    \---thedavisons.ca
+        +---257
+        |   |   .gitignore
+        |   |   booking.html
+        |   |   contactUs.html
+        |   |   floorplan.html
+        |   |   gallery.html
+        |   |   index.html
+        |   |   information.html
+        |   |   LICENSE.txt
+        |   |   product.html
+        |   |   rates.html
+        |   |   
+        |   +---css
+        |   |       components.css
+        |   |       icons.css
+        |   |       responsee.css
+        |   |       template-style.css
+        |   |       testStyle.css
+        |   |       
+        |   +---font
+        |   |       mfglabsiconset-webfont.eot
+        |   |       mfglabsiconset-webfont.svg
+        |   |       mfglabsiconset-webfont.ttf
+        |   |       mfglabsiconset-webfont.woff
+        |   |       Simple-Line-Icons.eot
+        |   |       Simple-Line-Icons.svg
+        |   |       Simple-Line-Icons.ttf
+        |   |       Simple-Line-Icons.woff
+        |   |       
+        |   +---img
+        |   |   |   330x190-2.jpg
+        |   |   |   330x190-3.jpg
+        |   |   |   330x190.jpg
+        |   |   |   logo.jpg
+        |   |   |   logo.png
+        |   |   |   
+        |   |   +---basement
+        |   |   |       basement.alb
+        |   |   |       basement1.jpg
+        |   |   |       basement2.jpg
+        |   |   |       basement3.jpg
+        |   |   |       basement4.jpg
+        |   |   |       basement5.jpg
+        |   |   |       
+        |   |   +---bus_route
+        |   |   |       7-29-2014 5-59-48 PM.jpg
+        |   |   |       bus_route.jpg
+        |   |   |       bus_route.psd
+        |   |   |       
+        |   |   +---common
+        |   |   |       Common.alb
+        |   |   |       laundry1.jpg
+        |   |   |       laundry3.jpg
+        |   |   |       outside1.jpg
+        |   |   |       outside10.jpg
+        |   |   |       outside11.jpg
+        |   |   |       outside12.jpg
+        |   |   |       outside13.jpg
+        |   |   |       outside14.jpg
+        |   |   |       outside15.jpg
+        |   |   |       outside16.jpg
+        |   |   |       outside2.jpg
+        |   |   |       outside3.jpg
+        |   |   |       outside4.jpg
+        |   |   |       outside5.jpg
+        |   |   |       outside6.jpg
+        |   |   |       outside7.jpg
+        |   |   |       outside8.jpg
+        |   |   |       outside9.jpg
+        |   |   |       
+        |   |   +---floor_plan
+        |   |   |       basement_floorplan.jpg
+        |   |   |       main_floor_floorplan.jpg
+        |   |   |       
+        |   |   +---images
+        |   |   |       available.jpg
+        |   |   |       sorry_rented.jpg
+        |   |   |       sorry_rented.psd
+        |   |   |       
+        |   |   \---main_floor
+        |   |           bathroom1.jpg
+        |   |           bathroom2.jpg
+        |   |           bedroom1.1.jpg
+        |   |           bedroom1.3.jpg
+        |   |           bedroom2.1.jpg
+        |   |           bedroom2.3.jpg
+        |   |           bedroom3.1.jpg
+        |   |           bedroom3.2.jpg
+        |   |           hallway1.jpg
+        |   |           kitchen1.jpg
+        |   |           kitchen2.jpg
+        |   |           kitchen3.jpg
+        |   |           kitchen4.jpg
+        |   |           livingRoom1.jpg
+        |   |           livingRoom12.jpg
+        |   |           livingRoom2.jpg
+        |   |           livingRoom8.jpg
+        |   |           livingRoom9.jpg
+        |   |           Main_floor.alb
+        |   |           
+        |   +---js
+        |   |       jquery-1.8.3.min.js
+        |   |       jquery-ui.min.js
+        |   |       modernizr.js
+        |   |       responsee.js
+        |   |       
+        |   +---owl-carousel
+        |   |       ajax-loader.gif
+        |   |       owl.carousel.css
+        |   |       owl.carousel.js
+        |   |       owl.carousel.min.js
+        |   |       owl.theme.css
+        |   |       owl.video.play.png
+        |   |       
+        |   \---Templates
+        |           Templates.dwt
+        |           
+        +---99miller
+        |   |   createJSONphotoManifest.py
+        |   |   index.html
+        |   |   miller_data.json
+        |   |   rename.py
+        |   |   startWebServerForTesting.bat
+        |   |   
+        |   +---images
+        |   |   +---basement
+        |   |   |       basement_010.jpg
+        |   |   |       basement_020.jpg
+        |   |   |       basement_030.jpg
+        |   |   |       basement_040.jpg
+        |   |   |       basement_050.jpg
+        |   |   |       basement_060.jpg
+        |   |   |       basement_070.jpg
+        |   |   |       basement_080.jpg
+        |   |   |       
+        |   |   +---common
+        |   |   |       common_008.jpg
+        |   |   |       common_010.jpg
+        |   |   |       common_020.jpg
+        |   |   |       common_030.jpg
+        |   |   |       common_040.jpg
+        |   |   |       common_050.jpg
+        |   |   |       common_060.jpg
+        |   |   |       common_100.jpg
+        |   |   |       common_120.jpg
+        |   |   |       
+        |   |   \---main_floor
+        |   |           mainfloor_010.jpg
+        |   |           mainfloor_020.jpg
+        |   |           mainfloor_030.jpg
+        |   |           mainfloor_040.jpg
+        |   |           mainfloor_050.jpg
+        |   |           mainfloor_060.jpg
+        |   |           mainfloor_070.jpg
+        |   |           mainfloor_080.jpg
+        |   |           mainfloor_090.jpg
+        |   |           mainfloor_100.jpg
+        |   |           mainfloor_110.jpg
+        |   |           mainfloor_120.jpg
+        |   |           mainfloor_140.jpg
+        |   |           mainfloor_150.jpg
+        |   |           mainfloor_160.jpg
+        |   |           mainfloor_170.jpg
+        |   |           mainfloor_180.jpg
+        |   |           mainfloor_190.jpg
+        |   |           
+        |   \---utilities
+        |       +---electricity
+        |       |       2024-02-16.pdf
+        |       |       2024-03-19.pdf
+        |       |       2024-04-18.pdf
+        |       |       2024-05-17.pdf
+        |       |       2024-06-18.pdf
+        |       |       2024-07-18.pdf
+        |       |       2024-08-20.pdf
+        |       |       2024-09-19.pdf
+        |       |       2024-10-21.pdf
+        |       |       2024-11-19.pdf
+        |       |       2025-01-21.pdf
+        |       |       2025-02-18.pdf
+        |       |       2025-03-19.pdf
+        |       |       2025-04-23.pdf
+        |       |       2025-05-21.pdf
+        |       |       2025-06-20.pdf
+        |       |       2025-07-21.pdf
+        |       |       2025-08-20.pdf
+        |       |       2025-09-18.pdf
+        |       |       2025-10-20.pdf
+        |       |       2025-11-19.pdf
+        |       |       2025-12-19.pdf
+        |       |       2026-01-27.pdf
+        |       |       Downloads - Shortcut.lnk
+        |       |       
+        |       \---gas
+        |               2024-02-22.pdf
+        |               2024-03-22.pdf
+        |               2024-04-22.pdf
+        |               2024-05-23.pdf
+        |               2024-07-23.pdf
+        |               2024-08-21.pdf
+        |               2024-09-20.pdf
+        |               2024-10-23.pdf
+        |               2024-10-24.pdf
+        |               2024-11-24.pdf
+        |               2025-01-24.pdf
+        |               2025-01-26.pdf
+        |               2025-02-24.pdf
+        |               2025-03-24.pdf
+        |               2025-04-24.pdf
+        |               2025-05-24.pdf
+        |               2025-06-24.pdf
+        |               2025-07-24.pdf
+        |               2025-08-25.pdf
+        |               2025-09-25.pdf
+        |               2025-10-25.pdf
+        |               2025-11-25.pdf
+        |               2025-12-25.pdf
+        |               rename.py
+        |               
+        +---dca
+        |   |   .gitattributes
+        |   |   about.html
+        |   |   contact.html
+        |   |   dca.psd
+        |   |   index.html
+        |   |   LICENSE
+        |   |   style.css
+        |   |   
+        |   +---images
+        |   |   |   .DS_Store
+        |   |   |   add.png
+        |   |   |   bg.jpg
+        |   |   |   bubble.png
+        |   |   |   call.png
+        |   |   |   directionSigns.jpg
+        |   |   |   facebook.png
+        |   |   |   gear.png
+        |   |   |   gplus.png
+        |   |   |   GPS.jpg
+        |   |   |   home.png
+        |   |   |   info.png
+        |   |   |   logo.jpg
+        |   |   |   logo.png
+        |   |   |   lostGirl.jpg
+        |   |   |   lostGirl2.jpg
+        |   |   |   mail.png
+        |   |   |   menu.png
+        |   |   |   mobifreaks.png
+        |   |   |   navigation.png
+        |   |   |   Oracle.png
+        |   |   |   quotes.png
+        |   |   |   taylor-logo.jpg
+        |   |   |   taylor-logo.png
+        |   |   |   taylor-logo.psd
+        |   |   |   twitter.png
+        |   |   |   
+        |   |   \---stock
+        |   |       |   2021-01-23_11-29-41.jpg
+        |   |       |   DCA-2.jpg
+        |   |       |   DCA.jpg
+        |   |       |   directionSigns.jpg
+        |   |       |   googleMap.jpg
+        |   |       |   GPS.jpg
+        |   |       |   GPSydneyLogo.jpg
+        |   |       |   IMG_2600.JPG
+        |   |       |   IMG_2601.JPG
+        |   |       |   IMG_2602.JPG
+        |   |       |   IMG_2604.JPG
+        |   |       |   IMG_2605.JPG
+        |   |       |   Sydney-Directionally challenged.jpg
+        |   |       |   
+        |   |       +---resized
+        |   |       |       2021-01-23_11-29-41.jpg
+        |   |       |       DCA-2.jpg
+        |   |       |       directionSigns.jpg
+        |   |       |       googleMap.jpg
+        |   |       |       GPS.jpg
+        |   |       |       GPSydneyLogo.jpg
+        |   |       |       IMG_2600.jpg
+        |   |       |       IMG_2601.jpg
+        |   |       |       IMG_2602.jpg
+        |   |       |       IMG_2603.mp4
+        |   |       |       IMG_2604.jpg
+        |   |       |       IMG_2605.jpg
+        |   |       |       Sydney-Directionally challenged.jpg
+        |   |       |       
+        |   |       \---video
+        |   |               IMG_2603.MOV
+        |   |               IMG_2603.mp4
+        |   |               
+        |   \---js
+        |           jquery.min.js
+        |           slider.min.js
+        |           
+        +---florida
+        |   |   createJSONphotoManifest.py
+        |   |   index.html
+        |   |   startWebServerForTesting.bat
+        |   |   
+        |   \---images
+        |       |   community_photos.json
+        |       |   property_photos.json
+        |       |   
+        |       +---community
+        |       |       HeronsGlen-1.jpg
+        |       |       HeronsGlen-2.jpg
+        |       |       HeronsGlen-3.jpg
+        |       |       HeronsGlen-4.jpg
+        |       |       HeronsGlen-5.jpg
+        |       |       HeronsGlen-6.jpg
+        |       |       HeronsGlen-7.jpg
+        |       |       HeronsGlen-8.jpg
+        |       |       HeronsGlenFrontGate-1.jpg
+        |       |       
+        |       \---property
+        |               Florida-070.jpg
+        |               Florida-074.jpg
+        |               Florida-080.jpg
+        |               Florida-082.jpg
+        |               Florida-084.jpg
+        |               Florida-086.jpg
+        |               Florida-090.jpg
+        |               Florida-091.jpg
+        |               Florida-092.jpg
+        |               Florida-096.jpg
+        |               Florida-098.jpg
+        |               Florida-099.jpg
+        |               Florida-100.jpg
+        |               Florida-102.jpg
+        |               Florida-104.jpg
+        |               Florida-106.jpg
+        |               Florida-108.jpg
+        |               Florida-110.jpg
+        |               Florida-111.jpg
+        |               Florida-111a.jpg
+        |               Florida-111b.jpg
+        |               Florida-111c.jpg
+        |               Florida-112.jpg
+        |               Florida-114.jpg
+        |               Florida-115.jpg
+        |               Florida-116.jpg
+        |               Florida-118.jpg
+        |               Florida-120.jpg
+        |               Florida-124.jpg
+        |               floridaMap.jpg
+        |               
+        +---muskoka
+        |   |   .gitignore
+        |   |   booking.html
+        |   |   contactUs.html
+        |   |   description.html
+        |   |   gallery.html
+        |   |   index - copy.html
+        |   |   index.html
+        |   |   LICENSE.txt
+        |   |   product.html
+        |   |   rates.html
+        |   |   testIndex.html
+        |   |   
+        |   +---css
+        |   |       components.css
+        |   |       icons.css
+        |   |       responsee.css
+        |   |       template-style.css
+        |   |       testStyle.css
+        |   |       
+        |   +---font
+        |   |       mfglabsiconset-webfont.eot
+        |   |       mfglabsiconset-webfont.svg
+        |   |       mfglabsiconset-webfont.ttf
+        |   |       mfglabsiconset-webfont.woff
+        |   |       Simple-Line-Icons.eot
+        |   |       Simple-Line-Icons.svg
+        |   |       Simple-Line-Icons.ttf
+        |   |       Simple-Line-Icons.woff
+        |   |       
+        |   +---img
+        |   |       330x190-2.jpg
+        |   |       330x190-3.jpg
+        |   |       330x190.jpg
+        |   |       Arial_view.JPG
+        |   |       background.jpg
+        |   |       basement_1.jpg
+        |   |       bathroom1_1.jpg
+        |   |       bathroom2_1.jpg
+        |   |       bathroom3_1.jpg
+        |   |       bedroom3_1.jpg
+        |   |       bedroom4_1.jpg
+        |   |       bedroom5_1.jpg
+        |   |       bedroom5_2.jpg
+        |   |       bedroom6_1.jpg
+        |   |       bedroom7_1.jpg
+        |   |       bedroom8_1.jpg
+        |   |       cottage_front_1.jpg
+        |   |       familyroom2_1.jpg
+        |   |       family_room_1.jpg
+        |   |       family_room_2.jpg
+        |   |       gamesroom_2.jpg
+        |   |       gamesroom_4.jpg
+        |   |       gamesroom_6.jpg
+        |   |       gamesroom_7.jpg
+        |   |       games_room_1.jpg
+        |   |       kitchen_1.jpg
+        |   |       kitchen_2.jpg
+        |   |       kitchen_3.jpg
+        |   |       kitchen_4.jpg
+        |   |       laundry_1.jpg
+        |   |       logo.jpg
+        |   |       logo.png
+        |   |       master1_1.jpg
+        |   |       master1_bathroom_1.jpg
+        |   |       master1_bathroom_2.jpg
+        |   |       master1_closet_1.jpg
+        |   |       master2_1.jpg
+        |   |       master2_2.jpg
+        |   |       master2_bathrom_1.jpg
+        |   |       mudroom_1.jpg
+        |   |       
+        |   +---js
+        |   |       jquery-1.8.3.min.js
+        |   |       jquery-ui.min.js
+        |   |       modernizr.js
+        |   |       responsee.js
+        |   |       
+        |   +---owl-carousel
+        |   |       ajax-loader.gif
+        |   |       owl.carousel.css
+        |   |       owl.carousel.js
+        |   |       owl.carousel.min.js
+        |   |       owl.theme.css
+        |   |       owl.video.play.png
+        |   |       
+        |   \---Templates
+        |           Templates.dwt
+        |           
+        +---root
+        |   |   .gitignore
+        |   |   createJSONphotoManifest.py
+        |   |   index.html
+        |   |   miller_data.json
+        |   |   rename.py
+        |   |   startWebServerForTesting.bat
+        |   |   
+        |   +---.github
+        |   |   \---workflows
+        |   |           deploy.yml
+        |   |           
+        |   +---images
+        |   |   +---basement
+        |   |   |       basement_010.jpg
+        |   |   |       basement_020.jpg
+        |   |   |       basement_030.jpg
+        |   |   |       basement_040.jpg
+        |   |   |       basement_050.jpg
+        |   |   |       basement_060.jpg
+        |   |   |       basement_070.jpg
+        |   |   |       basement_080.jpg
+        |   |   |       
+        |   |   +---common
+        |   |   |       common_008.jpg
+        |   |   |       common_010.jpg
+        |   |   |       common_020.jpg
+        |   |   |       common_030.jpg
+        |   |   |       common_040.jpg
+        |   |   |       common_050.jpg
+        |   |   |       common_060.jpg
+        |   |   |       common_100.jpg
+        |   |   |       common_120.jpg
+        |   |   |       
+        |   |   \---main_floor
+        |   |           mainfloor_010.jpg
+        |   |           mainfloor_020.jpg
+        |   |           mainfloor_030.jpg
+        |   |           mainfloor_040.jpg
+        |   |           mainfloor_050.jpg
+        |   |           mainfloor_060.jpg
+        |   |           mainfloor_070.jpg
+        |   |           mainfloor_080.jpg
+        |   |           mainfloor_090.jpg
+        |   |           mainfloor_100.jpg
+        |   |           mainfloor_110.jpg
+        |   |           mainfloor_120.jpg
+        |   |           mainfloor_140.jpg
+        |   |           mainfloor_150.jpg
+        |   |           mainfloor_160.jpg
+        |   |           mainfloor_170.jpg
+        |   |           mainfloor_180.jpg
+        |   |           mainfloor_190.jpg
+        |   |           
+        |   \---utilities
+        |       +---electricity
+        |       |       2024-02-16.pdf
+        |       |       2024-03-19.pdf
+        |       |       2024-04-18.pdf
+        |       |       2024-05-17.pdf
+        |       |       2024-06-18.pdf
+        |       |       2024-07-18.pdf
+        |       |       2024-08-20.pdf
+        |       |       2024-09-19.pdf
+        |       |       2024-10-21.pdf
+        |       |       2024-11-19.pdf
+        |       |       2025-01-21.pdf
+        |       |       2025-02-18.pdf
+        |       |       2025-03-19.pdf
+        |       |       2025-04-23.pdf
+        |       |       2025-05-21.pdf
+        |       |       2025-06-20.pdf
+        |       |       2025-07-21.pdf
+        |       |       2025-08-20.pdf
+        |       |       2025-09-18.pdf
+        |       |       2025-10-20.pdf
+        |       |       2025-11-19.pdf
+        |       |       2025-12-19.pdf
+        |       |       2026-01-27.pdf
+        |       |       Downloads - Shortcut.lnk
+        |       |       
+        |       \---gas
+        |               2024-02-22.pdf
+        |               2024-03-22.pdf
+        |               2024-04-22.pdf
+        |               2024-05-23.pdf
+        |               2024-07-23.pdf
+        |               2024-08-21.pdf
+        |               2024-09-20.pdf
+        |               2024-10-23.pdf
+        |               2024-10-24.pdf
+        |               2024-11-24.pdf
+        |               2025-01-24.pdf
+        |               2025-01-26.pdf
+        |               2025-02-24.pdf
+        |               2025-03-24.pdf
+        |               2025-04-24.pdf
+        |               2025-05-24.pdf
+        |               2025-06-24.pdf
+        |               2025-07-24.pdf
+        |               2025-08-25.pdf
+        |               2025-09-25.pdf
+        |               2025-10-25.pdf
+        |               2025-11-25.pdf
+        |               2025-12-25.pdf
+        |               rename.py
+        |               
+        +---rylee
+        |   |   academics.html
+        |   |   index.html
+        |   |   moreAboutMe.html
+        |   |   myTeam.html
+        |   |   nextGames.html
+        |   |   photoGallery.html
+        |   |   test.html
+        |   |   videoGallery.html
+        |   |   
+        |   +---includes
+        |   |   |   left-menu.html
+        |   |   |   
+        |   |   \---_vti_cnf
+        |   |           left-menu.html
+        |   |           
+        |   +---js
+        |   |   |   minmax.js
+        |   |   |   
+        |   |   \---_vti_cnf
+        |   |           minmax.js
+        |   |           
+        |   +---media
+        |   |   |   hockey_logo-full-blue.jpg
+        |   |   |   hockey_logo-full-red.jpg
+        |   |   |   logo.psd
+        |   |   |   red-diamond.png
+        |   |   |   ryleeDavison.png
+        |   |   |   sydney-blue.psd
+        |   |   |   sydneyDavison-hornets.gif
+        |   |   |   taylor.psd
+        |   |   |   taylorDavison-barracudas.png
+        |   |   |   taylorDavison-hornets.gif
+        |   |   |   
+        |   |   +---photos
+        |   |   |       content-blocked.jpg
+        |   |   |       content-blocked.png
+        |   |   |       marks-rylee.jpg
+        |   |   |       marks.jpg
+        |   |   |       marks.png
+        |   |   |       photo_1.JPG
+        |   |   |       photo_2.JPG
+        |   |   |       photo_3.JPG
+        |   |   |       photo_4.JPG
+        |   |   |       photo_5.JPG
+        |   |   |       photo_6.JPG
+        |   |   |       photo_7.jpg
+        |   |   |       rylee-headshot.JPG
+        |   |   |       rylee_1.JPG
+        |   |   |       team_picture.jpg
+        |   |   |       
+        |   |   +---videos
+        |   |   |   |   clip1_Taylor-heading maning puck .6.MTS
+        |   |   |   |   clip1_Taylor-rush-Syd-1.MTS
+        |   |   |   |   clip1_Taylor-Slapshot.MTS
+        |   |   |   |   clip2_syd carry puck in their end.MTS
+        |   |   |   |   clip2_syd rush near end of clip (2 min left).MTS
+        |   |   |   |   clip2_taylor pinching.MTS
+        |   |   |   |   clip2_Taylor slap shot.MTS
+        |   |   |   |   clip2_Taylor's slap shot - Syd's goal.MTS
+        |   |   |   |   Taylor.htm
+        |   |   |   |   Taylor.swf
+        |   |   |   |   Taylor.vproj
+        |   |   |   |   Taylor.vproj.bak
+        |   |   |   |   Taylor_1.wmv
+        |   |   |   |   Taylor_2.vproj
+        |   |   |   |   Taylor_2.vproj.bak
+        |   |   |   |   
+        |   |   |   \---_vti_cnf
+        |   |   |           clip1_Taylor-heading maning puck .6.MTS
+        |   |   |           clip1_Taylor-rush-Syd-1.MTS
+        |   |   |           clip1_Taylor-Slapshot.MTS
+        |   |   |           clip2_syd carry puck in their end.MTS
+        |   |   |           clip2_syd rush near end of clip (2 min left).MTS
+        |   |   |           clip2_taylor pinching.MTS
+        |   |   |           clip2_Taylor slap shot.MTS
+        |   |   |           clip2_Taylor's slap shot - Syd's goal.MTS
+        |   |   |           Taylor.htm
+        |   |   |           Taylor.swf
+        |   |   |           Taylor.vproj
+        |   |   |           Taylor.vproj.bak
+        |   |   |           Taylor_1.wmv
+        |   |   |           Taylor_2.vproj
+        |   |   |           Taylor_2.vproj.bak
+        |   |   |           
+        |   |   \---_vti_cnf
+        |   |           hockey_logo-full-red.jpg
+        |   |           red-diamond.png
+        |   |           sydneyDavison-hornets.gif
+        |   |           taylor.psd
+        |   |           taylorDavison-barracudas.png
+        |   |           taylorDavison-hornets.gif
+        |   |           
+        |   +---music
+        |   |   |   01 - Vangelis - Chariots of fire - Titles.mp3
+        |   |   |   
+        |   |   \---_vti_cnf
+        |   |           01 - Vangelis - Chariots of fire - Titles.mp3
+        |   |           
+        |   +---styles
+        |   |   |   taylor-syd-rylee.css
+        |   |   |   
+        |   |   \---_vti_cnf
+        |   |           taylor-syd.css
+        |   |           
+        |   +---Templates
+        |   |       taylor-syd-rylee.dwt
+        |   |       
+        |   +---_vti_cnf
+        |   |       academics.html
+        |   |       index.html
+        |   |       moreAboutMe.html
+        |   |       myTeam.html
+        |   |       nextGames.html
+        |   |       photoGallery.html
+        |   |       videoGallery.html
+        |   |       
+        |   \---_vti_pvt
+        |           botinfs.cnf
+        |           bots.cnf
+        |           deptodoc.btr
+        |           doctodep.btr
+        |           fpdbw.ico
+        |           linkinfo.btr
+        |           service.cnf
+        |           service.lck
+        |           services.cnf
+        |           structure.cnf
+        |           writeto.cnf
+        |           
+        +---taylorsgame
+        |   |   .gitattributes
+        |   |   about.html
+        |   |   contact.html
+        |   |   index.html
+        |   |   LICENSE
+        |   |   style.css
+        |   |   
+        |   +---images
+        |   |   |   .DS_Store
+        |   |   |   add.png
+        |   |   |   bg.jpg
+        |   |   |   bubble.png
+        |   |   |   call.png
+        |   |   |   facebook.png
+        |   |   |   gear.png
+        |   |   |   gplus.png
+        |   |   |   home.png
+        |   |   |   info.png
+        |   |   |   logo.png
+        |   |   |   mail.png
+        |   |   |   menu.png
+        |   |   |   mobifreaks.png
+        |   |   |   navigation.png
+        |   |   |   Oracle.png
+        |   |   |   quotes.png
+        |   |   |   taylor-logo.jpg
+        |   |   |   taylor-logo.png
+        |   |   |   taylor-logo.psd
+        |   |   |   twitter.png
+        |   |   |   
+        |   |   \---stock
+        |   |       |   1.jpg
+        |   |       |   2.jpg
+        |   |       |   3.jpg
+        |   |       |   4.jpg
+        |   |       |   5.jpg
+        |   |       |   51 card pickup.jpg
+        |   |       |   6.jpg
+        |   |       |   7.jpg
+        |   |       |   chess set.jpg
+        |   |       |   cribboard.jpg
+        |   |       |   guitar.jpg
+        |   |       |   piano keyboard.jpg
+        |   |       |   poolBalls.jpg
+        |   |       |   puzzle.jpg
+        |   |       |   readme.txt
+        |   |       |   sunglasses.jpg
+        |   |       |   tennis racket.jpg
+        |   |       |   
+        |   |       \---resized
+        |   |               20210105_000147.jpg
+        |   |               20210105_000151.jpg
+        |   |               51 card pickup.jpg
+        |   |               chess set.jpg
+        |   |               cribboard.jpg
+        |   |               guitar.jpg
+        |   |               icerink.jpg
+        |   |               piano keyboard.jpg
+        |   |               poolBalls.jpg
+        |   |               puzzle.jpg
+        |   |               sunglasses.jpg
+        |   |               tennis racket.jpg
+        |   |               woodworking-shop.jpg
+        |   |               
+        |   \---js
+        |           jquery.min.js
+        |           slider.min.js
+        |           
+        \---xmas2024
+            |   elements.html
+            |   index.html
+            |   LICENSE.txt
+            |   location - Copy (2).html
+            |   location.html
+            |   openVPN2024.ovpn
+            |   page-01.html
+            |   README.txt
+            |   
+            +---assets
+            |   +---css
+            |   |       fontawesome-all.min.css
+            |   |       main.css
+            |   |       noscript.css
+            |   |       
+            |   +---js
+            |   |       breakpoints.min.js
+            |   |       browser.min.js
+            |   |       jquery.min.js
+            |   |       jquery.scrollex.min.js
+            |   |       jquery.scrolly.min.js
+            |   |       main.js
+            |   |       util.js
+            |   |       
+            |   +---sass
+            |   |   |   main.scss
+            |   |   |   noscript.scss
+            |   |   |   
+            |   |   +---base
+            |   |   |       _page.scss
+            |   |   |       _reset.scss
+            |   |   |       _typography.scss
+            |   |   |       
+            |   |   +---components
+            |   |   |       _actions.scss
+            |   |   |       _box.scss
+            |   |   |       _button.scss
+            |   |   |       _form.scss
+            |   |   |       _icon.scss
+            |   |   |       _icons.scss
+            |   |   |       _image.scss
+            |   |   |       _list.scss
+            |   |   |       _pagination.scss
+            |   |   |       _row.scss
+            |   |   |       _section.scss
+            |   |   |       _table.scss
+            |   |   |       
+            |   |   +---layout
+            |   |   |       _footer.scss
+            |   |   |       _header.scss
+            |   |   |       _intro.scss
+            |   |   |       _main.scss
+            |   |   |       _nav.scss
+            |   |   |       _navPanel.scss
+            |   |   |       _wrapper.scss
+            |   |   |       
+            |   |   \---libs
+            |   |           _breakpoints.scss
+            |   |           _fixed-grid.scss
+            |   |           _functions.scss
+            |   |           _html-grid.scss
+            |   |           _mixins.scss
+            |   |           _vars.scss
+            |   |           _vendor.scss
+            |   |           
+            |   \---webfonts
+            |           fa-brands-400.eot
+            |           fa-brands-400.svg
+            |           fa-brands-400.ttf
+            |           fa-brands-400.woff
+            |           fa-brands-400.woff2
+            |           fa-regular-400.eot
+            |           fa-regular-400.svg
+            |           fa-regular-400.ttf
+            |           fa-regular-400.woff
+            |           fa-regular-400.woff2
+            |           fa-solid-900.eot
+            |           fa-solid-900.svg
+            |           fa-solid-900.ttf
+            |           fa-solid-900.woff
+            |           fa-solid-900.woff2
+            |           
+            +---images
+            |       frontEndWork.png
+            |       FullSizeRender.jpeg
+            |       IMG_0712.jpeg
+            |       IMG_0713.jpeg
+            |       IMG_0714.jpeg
+            |       IMG_0715.jpeg
+            |       IMG_0716.jpeg
+            |       IMG_0717.jpeg
+            |       IMG_0718.jpeg
+            |       IMG_0719.jpeg
+            |       IMG_0720.jpeg
+            |       IMG_0721.jpeg
+            |       IMG_0722.jpeg
+            |       IMG_0723.jpeg
+            |       IMG_0724.jpeg
+            |       IMG_0725.jpeg
+            |       IMG_0726.jpeg
+            |       IMG_0727.jpeg
+            |       IMG_0728.jpeg
+            |       IMG_0729.jpeg
+            |       IMG_0730.jpeg
+            |       IMG_0731.jpeg
+            |       IMG_0732.jpeg
+            |       IMG_0733.jpeg
+            |       IMG_0734.jpeg
+            |       IMG_0735.jpeg
+            |       IMG_0736.jpeg
+            |       IMG_0737.jpeg
+            |       IMG_0738.jpeg
+            |       IMG_0739.jpeg
+            |       IMG_0740.jpeg
+            |       IMG_0741.jpeg
+            |       IMG_0742.jpeg
+            |       IMG_0743.jpeg
+            |       IMG_0745.jpeg
+            |       IMG_0746.jpeg
+            |       IMG_0747.jpeg
+            |       IMG_0749.jpeg
+            |       IMG_0750.jpeg
+            |       IMG_0751.jpeg
+            |       IMG_0752.jpeg
+            |       IMG_0753.jpeg
+            |       IMG_0754.jpeg
+            |       IMG_0755.jpeg
+            |       IMG_0756.jpeg
+            |       IMG_0757.jpeg
+            |       IMG_0758.jpeg
+            |       IMG_0759.jpeg
+            |       IMG_0760.jpeg
+            |       IMG_6249.jpeg
+            |       losers.jpg
+            |       tirereciept1.jpeg
+            |       tirereciept2.jpg
+            |       winners.jpg
+            |       
+            \---videos
+                    Moomba jax.MOV
+                    Moomba Rylee.MOV
+                    Moomba Taylor.MOV
+                    

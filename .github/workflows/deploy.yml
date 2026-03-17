@@ -23,13 +23,38 @@ jobs:
 
       - name: Deploy sites
         run: |
+          set -e
+
+          echo "Starting deployment..."
+
+          DEPLOYED=0
+          SKIPPED=0
+          ERRORS=0
+          SUMMARY=""
+
           for domain_path in sites/*; do
             [ -d "$domain_path" ] || continue
+
             DOMAIN=$(basename "$domain_path")
+
+            echo ""
+            echo "========================================"
+            echo "Processing domain: $DOMAIN"
+            echo "========================================"
+
+            if [ ! -d "$domain_path/root" ]; then
+              echo "WARNING: $DOMAIN has no root folder"
+            fi
 
             for site_path in "$domain_path"/*; do
               [ -d "$site_path" ] || continue
+
               SITE=$(basename "$site_path")
+
+              # Skip hidden folders
+              if [[ "$SITE" == .* ]]; then
+                continue
+              fi
 
               if [ "$SITE" = "root" ]; then
                 BUCKET="www.$DOMAIN"
@@ -37,24 +62,48 @@ jobs:
                 BUCKET="$SITE.$DOMAIN"
               fi
 
-              echo "Checking bucket: $BUCKET"
+              echo ""
+              echo "----------------------------------------"
+              echo "Domain : $DOMAIN"
+              echo "Site   : $SITE"
+              echo "Bucket : $BUCKET"
+              echo "Path   : $site_path"
+              echo "----------------------------------------"
 
               if aws s3api head-bucket --bucket "$BUCKET" 2>/dev/null; then
-                echo "Deploying $site_path to s3://$BUCKET"
+                echo "Deploying to s3://$BUCKET"
 
-                # Sync static assets with long caching
+                # Sync static assets (long cache)
                 aws s3 sync "$site_path" "s3://$BUCKET" \
                   --delete \
                   --exclude "*.html" \
                   --cache-control "public,max-age=31536000"
 
-                # Sync HTML files with no-cache to ensure updates are seen immediately
+                # Sync HTML (no cache)
                 aws s3 sync "$site_path" "s3://$BUCKET" \
                   --exclude "*" \
                   --include "*.html" \
                   --cache-control "no-cache"
+
+                DEPLOYED=$((DEPLOYED+1))
+                SUMMARY="${SUMMARY}\n✅ $BUCKET (deployed)"
               else
-                echo "Skipping $site_path because bucket $BUCKET does not exist"
+                echo "Skipping - bucket does not exist"
+
+                SKIPPED=$((SKIPPED+1))
+                SUMMARY="${SUMMARY}\n⚠️  $BUCKET (missing bucket)"
               fi
             done
           done
+
+          echo ""
+          echo "========================================"
+          echo "DEPLOY SUMMARY"
+          echo "========================================"
+          echo -e "$SUMMARY"
+          echo ""
+          echo "Totals:"
+          echo "Deployed: $DEPLOYED"
+          echo "Skipped : $SKIPPED"
+          echo "Errors  : $ERRORS"
+          echo "========================================"
