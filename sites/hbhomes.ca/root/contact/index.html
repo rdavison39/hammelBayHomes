@@ -6,37 +6,23 @@
 
 <title>Contact | Hammel Bay Homes Excavation</title>
 
-<meta name="description" content="Contact Hammel Bay Homes for mini excavation services in Muskoka including Huntsville, Bracebridge, Lake of Bays and Gravenhurst.">
+<meta name="description" content="Contact Hammel Bay Homes for excavation and precision rock blasting services in Muskoka including Huntsville, Bracebridge, Lake of Bays and Gravenhurst.">
 
 <meta name="robots" content="index, follow">
 
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="/css/style.css">
 
 </head>
 
 <body>
 
-<header>
-
-<div class="logo">
-<img src="../images/logo-header.png" alt="Hammel Bay Homes">
-</div>
-
-<nav>
-<a href="../index.html">Home</a>
-<a href="../services/index.html">Services</a>
-<a href="../gallery/index.html">Gallery</a>
-<a href="../contact/index.html">Contact</a>
-<a href="../muskoka-mini-excavation/index.html">Muskoka Mini Excavation</a>
-</nav>
-
-</header>
+<div id="header"></div>
 
 <section class="hero">
 
 <h2>Request a Quote</h2>
 
-<p>Mini Excavation Services in Muskoka</p>
+<p>Excavation & Rock Blasting Services in Muskoka</p>
 
 <p>Serving Huntsville • Bracebridge • Lake of Bays • Gravenhurst</p>
 
@@ -67,7 +53,7 @@ Serving Huntsville, Bracebridge, Lake of Bays and Gravenhurst.
 </p>
 
 <p>
-Call or text anytime for excavation quotes.
+Call or text anytime for excavation or rock blasting quotes.
 </p>
 
 </div>
@@ -98,14 +84,13 @@ Call or text anytime for excavation quotes.
 
 </div>
 
-
 <!-- GOOGLE MAP -->
 
 <div class="container">
 
 <h2>Our Location</h2>
 
-<p>Based in Utterson, we provide excavation services throughout the Muskoka region.</p>
+<p>Based in Utterson, we provide excavation and rock blasting services throughout the Muskoka region.</p>
 
 <iframe 
 src="https://maps.google.com/maps?q=Utterson%20Ontario&t=&z=10&ie=UTF8&iwloc=&output=embed"
@@ -117,50 +102,41 @@ loading="lazy">
 
 </div>
 
-
 <!-- LOCAL SEO SECTION -->
 
 <div class="container">
 
-<h2>Mini Excavation Services Across Muskoka</h2>
+<h2>Excavation & Rock Blasting Services Across Muskoka</h2>
 
 <p>
-Hammel Bay Homes provides mini excavation services across the Muskoka region including
-Huntsville, Bracebridge, Lake of Bays and Gravenhurst. Our mini excavator is ideal for
-cottage properties where space is limited and larger excavation equipment cannot easily
-access the job site.
+Hammel Bay Homes provides excavation and precision rock blasting services across the Muskoka region including
+Huntsville, Bracebridge, Lake of Bays and Gravenhurst. Our equipment and NxBurst technology allow us to work efficiently
+in tight-access cottage environments where traditional methods are not practical.
 </p>
 
 <p>
-Common excavation projects in Muskoka include trenching for water lines and hydro conduit,
-driveway excavation, drainage improvements around cottages and culvert installation for
-private roads. We work with homeowners and contractors to complete excavation projects
-safely and efficiently.
+Common projects include trenching for water lines and hydro conduit, driveway excavation, drainage improvements,
+foundation preparation, and controlled rock breaking where bedrock is present.
 </p>
 
 <p>
-If you need excavation services in Huntsville, Bracebridge, Lake of Bays or Gravenhurst,
+If you need excavation or rock blasting services in Huntsville, Bracebridge, Lake of Bays or Gravenhurst,
 contact Hammel Bay Homes for a quote.
 </p>
 
 </div>
 
-<footer>
+<div id="footer"></div>
 
-<p><strong>Hammel Bay Homes</strong></p>
+<script>
+fetch('/includes/header.html')
+  .then(res => res.text())
+  .then(data => document.getElementById('header').innerHTML = data);
 
-<p>Mini Excavation Services Muskoka</p>
+fetch('/includes/footer.html')
+  .then(res => res.text())
+  .then(data => document.getElementById('footer').innerHTML = data);
+</script>
 
-<p>Utterson, Ontario</p>
-
-<p>Serving Huntsville • Bracebridge • Lake of Bays • Gravenhurst</p>
-
-</footer>
-<div class="sticky-quote">
-<span>Need excavation work in Muskoka?</span>
-<a href="tel:9054642014">Call 905-464-2014</a>
-<a href="../contact/index.html">Request a Quote</a>
-</div>
 </body>
 </html>
-

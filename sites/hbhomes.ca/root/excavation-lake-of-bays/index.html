@@ -4,43 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mini Excavation Lake of Bays Ontario | Hammel Bay Homes</title>
+<title>Excavation & Rock Blasting Lake of Bays Ontario | Hammel Bay Homes</title>
 
-<meta name="description" content="Mini excavation services in Lake of Bays Ontario including trenching, drainage, culverts, driveway preparation and stump removal.">
+<meta name="description" content="Excavation and precision rock blasting services in Lake of Bays Ontario including trenching, drainage, driveways and controlled rock breaking.">
 
 <meta name="robots" content="index, follow">
 
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="/css/style.css">
 
 </head>
 
 <body>
 
-<header>
-
-<div class="logo">
-<img src="../images/logo-header.png" alt="Hammel Bay Homes">
-</div>
-
-<nav>
-<a href="../index.html">Home</a>
-<a href="../services/index.html">Services</a>
-<a href="../gallery/index.html">Gallery</a>
-<a href="../contact/index.html">Contact</a>
-<a href="../muskoka-mini-excavation/index.html">Muskoka Mini Excavation</a>
-</nav>
-
-</header>
+<div id="header"></div>
 
 <section class="hero">
 
-<h2>Mini Excavation Services in Lake of Bays</h2>
+<h2>Excavation & Rock Blasting in Lake of Bays</h2>
 
-<p>Trenching • Drainage • Culverts • Driveway Preparation</p>
+<p>Trenching • Drainage • Culverts • Driveway Preparation • Rock Breaking</p>
 
 <p>Serving Lake of Bays and surrounding Muskoka cottage properties</p>
 
-<a class="button" href="../contact/index.html">Request a Quote</a>
+<a class="button" href="/contact/index.html">Request a Quote</a>
 
 </section>
 
@@ -49,18 +35,18 @@
 <h2>Reliable Excavation in Lake of Bays</h2>
 
 <p>
-Hammel Bay Homes provides mini excavation services throughout Lake of Bays and the Muskoka region. Based nearby in Utterson, we specialize in excavation projects for cottages and residential properties.
+Hammel Bay Homes provides excavation and precision rock blasting services throughout Lake of Bays and the Muskoka region. Based in nearby Utterson, we specialize in cottage and residential projects where terrain and rock conditions require controlled work.
 </p>
 
 <p>
-Our Bobcat 5.5-ton mini excavator is ideal for trenching, drainage improvements and driveway preparation where larger equipment cannot easily access the property.
+Our mini excavator combined with NxBurst rock breaking technology allows us to efficiently complete trenching, drainage, driveway preparation and rock removal.
 </p>
 
 </div>
 
 <div class="container">
 
-<h2>Excavation Services in Lake of Bays</h2>
+<h2>Services in Lake of Bays</h2>
 
 <div class="services">
 
@@ -76,7 +62,7 @@ Our Bobcat 5.5-ton mini excavator is ideal for trenching, drainage improvements 
 
 <div class="service">
 <h3>Culvert Installation</h3>
-<p>Installation and replacement of driveway culverts for better water flow.</p>
+<p>Installation and replacement of driveway culverts for proper water flow.</p>
 </div>
 
 <div class="service">
@@ -86,7 +72,12 @@ Our Bobcat 5.5-ton mini excavator is ideal for trenching, drainage improvements 
 
 <div class="service">
 <h3>Stump Removal</h3>
-<p>Removal of small to medium tree stumps and basic lot clearing.</p>
+<p>Removal of small to medium tree stumps and lot clearing.</p>
+</div>
+
+<div class="service">
+<h3>Precision Rock Breaking</h3>
+<p>Controlled rock breaking using NxBurst for tight or sensitive areas.</p>
 </div>
 
 </div>
@@ -98,28 +89,24 @@ Our Bobcat 5.5-ton mini excavator is ideal for trenching, drainage improvements 
 <h2>Other Muskoka Service Areas</h2>
 
 <ul>
-<li><a href="../excavation-huntsville/index.html">Excavation Huntsville</a></li>
-<li><a href="../excavation-bracebridge/index.html">Excavation Bracebridge</a></li>
-<li><a href="../excavation-gravenhurst/index.html">Excavation Gravenhurst</a></li>
+<li><a href="/excavation-huntsville/index.html">Excavation Huntsville</a></li>
+<li><a href="/excavation-bracebridge/index.html">Excavation Bracebridge</a></li>
+<li><a href="/excavation-gravenhurst/index.html">Excavation Gravenhurst</a></li>
 </ul>
 
 </div>
 
-<footer>
+<div id="footer"></div>
 
-<p><strong>Hammel Bay Homes</strong></p>
+<script>
+fetch('/includes/header.html')
+  .then(res => res.text())
+  .then(data => document.getElementById('header').innerHTML = data);
 
-<p>Mini Excavation Services Muskoka</p>
+fetch('/includes/footer.html')
+  .then(res => res.text())
+  .then(data => document.getElementById('footer').innerHTML = data);
+</script>
 
-<p>Utterson, Ontario</p>
-
-<p>Serving Huntsville • Bracebridge • Lake of Bays • Gravenhurst</p>
-
-</footer>
-<div class="sticky-quote">
-<span>Need excavation work in Muskoka?</span>
-<a href="tel:9054642014">Call 905-464-2014</a>
-<a href="../contact/index.html">Request a Quote</a>
-</div>
 </body>
 </html>
