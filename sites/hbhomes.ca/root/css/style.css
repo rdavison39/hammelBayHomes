@@ -399,6 +399,22 @@ THUMBNAIL ACTIVE STATE (ADDED)
 opacity:1;
 border:3px solid #e6b800;
 }
+/* =========================
+HEADER PHONE
+========================= */
+
+.header-phone a{
+color:#FFD700;
+text-decoration:none;
+font-weight:bold;
+font-size:16px;
+margin-left:20px;
+white-space:nowrap;
+}
+
+.header-phone a:hover{
+color:#ffcc00;
+}
 
 /* =========================
 MOBILE
