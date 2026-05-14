@@ -1097,3 +1097,186 @@ footer {
         font-size: 3rem;
     }
 }
+/* ========================================
+   CONTACT PAGE
+======================================== */
+
+.contact-page-section {
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+
+    align-items: start;
+
+    padding-top: 40px;
+
+    max-width: 1700px;
+
+    margin: auto;
+}
+
+/* LEFT IMAGE */
+
+.contact-image img {
+    width: 100%;
+
+    height: 1400px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* RIGHT SIDE */
+
+.contact-form-wrapper {
+    padding-top: 160px;
+
+    padding-left: 60px;
+
+    padding-right: 90px;
+}
+
+/* TITLE */
+
+.contact-form-wrapper h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 5rem;
+
+    line-height: 1;
+
+    color: #efaaa5;
+
+    margin-bottom: 50px;
+}
+
+/* FORM */
+
+.contact-form {
+    width: 100%;
+}
+
+/* GROUP */
+
+.form-group {
+    margin-bottom: 28px;
+}
+
+/* LABEL */
+
+.form-group label {
+    display: block;
+
+    font-size: 1rem;
+
+    color: #666;
+
+    margin-bottom: 8px;
+}
+
+/* INPUTS */
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 18px;
+
+    border: 1px solid #bdbdbd;
+
+    background: transparent;
+
+    font-size: 1rem;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* TEXTAREA */
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* CHECKBOXES */
+
+.checkbox-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.checkbox-group label {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    font-size: 1rem;
+
+    line-height: 1.4;
+
+    color: #666;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+
+    height: 18px;
+
+    margin-top: 3px;
+
+    flex-shrink: 0;
+}
+
+/* BUTTON */
+
+.submit-btn {
+    border: none;
+
+    cursor: pointer;
+
+    margin-top: 15px;
+
+    width: 180px;
+}
+
+/* ========================================
+   CONTACT RESPONSIVE
+======================================== */
+
+@media(max-width: 1000px) {
+
+    .contact-page-section {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-image img {
+        height: auto;
+    }
+
+    .contact-form-wrapper {
+        padding: 60px 35px;
+    }
+
+    .contact-form-wrapper h2 {
+        font-size: 3.8rem;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .contact-form-wrapper {
+        padding: 45px 24px;
+    }
+
+    .contact-form-wrapper h2 {
+        font-size: 2.8rem;
+    }
+}
