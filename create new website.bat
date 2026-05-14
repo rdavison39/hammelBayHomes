@@ -2,5 +2,5 @@ REM run this bat file when youy have added a new website (also setup a bucket in
 REM - what is in quotes is just a comment
 
 git add .
-git commit -m "add compass Star Celebrations site"
+git commit -m "changed to lower case"
 git push
