@@ -1,0 +1,1099 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background: #f5f5f5;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 96%;
+    max-width: 1450px;
+    margin: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #f5f5f5;
+}
+
+/* =========================
+   TOP HEADER
+========================= */
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.brand-area {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo-image {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.brand-text h1 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 4.2rem;
+
+    line-height: 0.95;
+
+    font-weight: 600;
+
+    color: #efaaa5;
+}
+
+.brand-text p {
+    margin-top: 10px;
+
+    font-size: 1.1rem;
+
+    color: #333;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.contact-btn {
+    background: #efaaa5;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 20px 46px;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    opacity: 0.9;
+}
+
+/* =========================
+   NAV
+========================= */
+
+.nav-container {
+    border-top: 1px solid #cfcfcf;
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+/* =========================
+   MENU
+========================= */
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+
+    gap: 34px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: #444;
+
+    font-size: 1rem;
+
+    font-weight: 400;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #efaaa5;
+}
+
+/* =========================
+   HEADER RIGHT
+========================= */
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.email {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.social {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+
+    align-items: center;
+
+    min-height: 860px;
+
+    padding-top: 40px;
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-left {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 720px;
+
+    height: 760px;
+
+    object-fit: cover;
+}
+
+/* =========================
+   HERO RIGHT
+========================= */
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 700px;
+}
+
+/* =========================
+   HERO TITLE
+========================= */
+
+.hero-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 7.5rem;
+
+    line-height: 0.92;
+
+    font-weight: 600;
+
+    color: #efaaa5;
+
+    text-align: center;
+}
+
+/* =========================
+   HERO TAGLINE
+========================= */
+
+.hero-content p {
+    margin-top: 48px;
+
+    text-align: center;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 2rem;
+
+    font-style: italic;
+
+    font-weight: 600;
+
+    color: #222;
+}
+
+/* =========================
+   CELEBRATE SECTION
+========================= */
+
+.celebrate-section {
+    padding: 120px 20px;
+
+    text-align: center;
+}
+
+.celebrate-content {
+    max-width: 900px;
+}
+
+.celebrate-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 5rem;
+
+    color: #efaaa5;
+
+    margin-bottom: 40px;
+}
+
+.celebrate-content p {
+    font-size: 1.15rem;
+
+    line-height: 2;
+
+    margin-bottom: 20px;
+}
+
+/* =========================
+   SPLIT SECTION
+========================= */
+
+.split-section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.reverse {
+    direction: rtl;
+}
+
+.reverse .split-text,
+.reverse .split-image {
+    direction: ltr;
+}
+
+/* IMAGE */
+
+.split-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* TEXT */
+
+.split-text {
+    background: #efaaa5;
+
+    color: white;
+
+    padding: 90px 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.split-text h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 4rem;
+
+    color: white;
+
+    margin-bottom: 40px;
+}
+
+.split-text p {
+    font-size: 1.1rem;
+
+    line-height: 2;
+
+    margin-bottom: 24px;
+}
+
+/* =========================
+   FINAL SECTION
+========================= */
+
+.final-section {
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    text-align: center;
+}
+
+.final-content {
+    max-width: 980px;
+}
+
+.final-content p {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 1.05rem;
+
+    font-weight: 600;
+
+    line-height: 1.7;
+
+    color: #333;
+
+    margin-bottom: 6px;
+}
+
+/* BUTTON */
+
+.final-section .contact-btn {
+    display: inline-block;
+
+    margin-top: 45px;
+
+    padding: 18px 40px;
+
+    font-size: 0.95rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 10px;
+}
+
+/* MAIN FOOTER */
+
+.footer-main {
+    text-align: center;
+
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+/* FOOTER TITLE */
+
+.footer-main h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    color: #efaaa5;
+
+    font-size: 2.2rem;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+}
+
+/* FOOTER EMAIL */
+
+.footer-main p {
+    font-size: 0.95rem;
+
+    margin-bottom: 24px;
+
+    color: #333;
+}
+
+/* SOCIALS */
+
+.footer-socials {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 16px;
+
+    font-size: 1.2rem;
+}
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    background: #d9d9d9;
+
+    text-align: center;
+
+    padding: 10px;
+
+    font-size: 0.75rem;
+
+    color: #555;
+}
+
+/* ========================================
+   ABOUT PAIGE PAGE
+======================================== */
+
+.about-main-section {
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+
+    align-items: start;
+
+    padding-top: 35px;
+
+    max-width: 1700px;
+
+    margin: auto;
+}
+
+/* LEFT IMAGE */
+
+.about-main-image img {
+    width: 100%;
+
+    height: 1400px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* RIGHT CONTENT */
+
+.about-main-content {
+    padding-top: 120px;
+    padding-left: 55px;
+    padding-right: 70px;
+}
+
+/* NAME */
+
+.about-main-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 5rem;
+
+    line-height: 1;
+
+    color: #efaaa5;
+
+    margin-bottom: 45px;
+}
+
+/* SUBTITLE */
+
+.about-main-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 2rem;
+
+    line-height: 1.4;
+
+    color: #333;
+
+    margin-bottom: 55px;
+}
+
+/* PARAGRAPHS */
+
+.about-main-content p {
+    font-size: 1.08rem;
+
+    line-height: 2;
+
+    margin-bottom: 34px;
+
+    color: #333;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 1200px) {
+
+    .hero-content h2 {
+        font-size: 5.5rem;
+    }
+
+    .brand-text h1 {
+        font-size: 3rem;
+    }
+
+    .about-main-content h2 {
+        font-size: 4rem;
+    }
+
+    .about-main-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .about-main-image img {
+        height: 1200px;
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width: 768px) {
+
+    .top-header {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .nav-inner {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .header-right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+        gap: 40px;
+
+        padding-bottom: 80px;
+    }
+
+    .hero-image {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .hero-content h2 {
+        font-size: 4.5rem;
+    }
+
+    .split-section {
+        grid-template-columns: 1fr;
+    }
+
+    .split-text {
+        padding: 60px 35px;
+    }
+
+    .split-text h2 {
+        font-size: 3rem;
+    }
+
+    .about-main-section {
+        grid-template-columns: 1fr;
+    }
+
+    .about-main-image img {
+        height: auto;
+    }
+
+    .about-main-content {
+        padding: 60px 35px;
+    }
+
+    .about-main-content h2 {
+        font-size: 3.5rem;
+    }
+
+    .about-main-content h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 600px) {
+
+    .brand-area {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brand-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .brand-text p {
+        font-size: 1rem;
+    }
+
+    .contact-btn {
+        padding: 16px 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 3.3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+
+    .celebrate-content h2 {
+        font-size: 3.2rem;
+    }
+
+    .split-text h2 {
+        font-size: 2.8rem;
+    }
+
+    .split-text {
+        padding: 50px 30px;
+    }
+
+    .split-text p {
+        line-height: 1.8;
+    }
+
+    .final-section {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .final-content p {
+        font-size: 0.95rem;
+
+        line-height: 1.6;
+    }
+
+    .footer-main h3 {
+        font-size: 1.8rem;
+    }
+
+    .footer-main p {
+        font-size: 0.9rem;
+    }
+
+    .footer-socials {
+        font-size: 1rem;
+    }
+
+    .about-main-content {
+        padding: 45px 24px;
+    }
+
+    .about-main-content h2 {
+        font-size: 2.7rem;
+
+        margin-bottom: 28px;
+    }
+
+    .about-main-content h3 {
+        font-size: 1.2rem;
+
+        margin-bottom: 32px;
+    }
+
+    .about-main-content p {
+        font-size: 1rem;
+
+        line-height: 1.8;
+
+        margin-bottom: 24px;
+    }
+}
+
+/* ========================================
+   WEDDINGS PAGE
+======================================== */
+
+/* HERO */
+
+.weddings-hero {
+    height: 760px;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.18),
+            rgba(0,0,0,0.18)
+        ),
+        url("../images/event-services/two-asian-women.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* HERO CONTENT */
+
+.weddings-hero-content {
+    max-width: 1200px;
+
+    padding: 20px;
+}
+
+.weddings-hero-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 6.5rem;
+
+    font-weight: 600;
+
+    line-height: 1.1;
+
+    color: white;
+
+    margin-bottom: 28px;
+}
+
+.weddings-hero-content p {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 1.7rem;
+
+    font-weight: 600;
+
+    line-height: 1.8;
+
+    color: white;
+}
+
+/* ========================================
+   CEREMONY GRID
+======================================== */
+
+.ceremony-grid-section {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* COLUMN */
+
+.ceremony-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMAGE CARD */
+
+.ceremony-image-card {
+    position: relative;
+}
+
+.ceremony-image-card img {
+    width: 100%;
+
+    height: 520px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* OVERLAY */
+
+.ceremony-image-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: rgba(0,0,0,0.15);
+}
+
+.ceremony-image-overlay h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 3.4rem;
+
+    line-height: 1.1;
+
+    color: white;
+
+    font-weight: 600;
+}
+
+/* TEXT CARD */
+
+.ceremony-text-card {
+    background: #ededed;
+
+    padding: 70px 50px;
+
+    text-align: center;
+
+    flex-grow: 1;
+}
+
+.ceremony-text-card p {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 1.45rem;
+
+    line-height: 1.9;
+
+    font-weight: 600;
+
+    color: #444;
+
+    margin-bottom: 26px;
+}
+
+/* ========================================
+   FINAL SECTION
+======================================== */
+
+.weddings-final-section {
+    padding-top: 120px;
+    padding-bottom: 100px;
+
+    text-align: center;
+}
+
+.weddings-final-content {
+    max-width: 1200px;
+}
+
+.weddings-final-content p {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 1.6rem;
+
+    line-height: 2;
+
+    font-weight: 600;
+
+    color: #444;
+
+    margin-bottom: 60px;
+}
+
+/* ========================================
+   WEDDINGS RESPONSIVE
+======================================== */
+
+@media(max-width: 1200px) {
+
+    .weddings-hero-content h2 {
+        font-size: 5rem;
+    }
+
+    .ceremony-image-overlay h3 {
+        font-size: 2.8rem;
+    }
+
+    .ceremony-text-card p {
+        font-size: 1.2rem;
+    }
+}
+
+/* TABLET */
+
+@media(max-width: 900px) {
+
+    .ceremony-grid-section {
+        grid-template-columns: 1fr;
+    }
+
+    .ceremony-image-card img {
+        height: 420px;
+    }
+
+    .ceremony-text-card {
+        padding: 50px 35px;
+    }
+
+    .weddings-hero {
+        height: 620px;
+    }
+
+    .weddings-hero-content h2 {
+        font-size: 4rem;
+    }
+
+    .weddings-hero-content p {
+        font-size: 1.4rem;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width: 600px) {
+
+    .weddings-hero {
+        height: 500px;
+    }
+
+    .weddings-hero-content h2 {
+        font-size: 2.8rem;
+    }
+
+    .weddings-hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .ceremony-image-overlay h3 {
+        font-size: 2.3rem;
+    }
+
+    .ceremony-text-card p {
+        font-size: 1.05rem;
+    }
+
+    .weddings-final-content p {
+        font-size: 1.15rem;
+    }
+}
+
+/* ========================================
+   GALLERY PAGE
+======================================== */
+
+.gallery-hero {
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    text-align: center;
+}
+
+.gallery-hero-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 5.5rem;
+
+    color: #efaaa5;
+
+    margin-bottom: 18px;
+}
+
+.gallery-hero-content p {
+    font-size: 1.15rem;
+
+    color: #555;
+}
+
+/* GRID */
+
+.gallery-section {
+    padding-bottom: 80px;
+}
+
+.gallery-grid {
+    column-count: 4;
+    column-gap: 16px;
+
+    width: 96%;
+    max-width: 1600px;
+
+    margin: auto;
+}
+
+.gallery-item {
+    break-inside: avoid;
+
+    margin-bottom: 16px;
+
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.02);
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1200px) {
+
+    .gallery-grid {
+        column-count: 3;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .gallery-grid {
+        column-count: 2;
+    }
+
+    .gallery-hero-content h2 {
+        font-size: 4rem;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .gallery-grid {
+        column-count: 1;
+    }
+
+    .gallery-hero {
+        padding-top: 50px;
+    }
+
+    .gallery-hero-content h2 {
+        font-size: 3rem;
+    }
+}
